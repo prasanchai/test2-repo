@@ -1,6 +1,6 @@
 import os
 import sys
-#from sys import executable
+# from sys import executable
 from os import rename
 
 
@@ -37,5 +37,5 @@ for key in list(dict.keys()):
     else:
         print('false')
 
-for key in list(dict.keys()):
-    print(key)
+for key, value in dict.items():
+    print("User Name:%s Age:%s" % (key, value))
