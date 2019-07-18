@@ -1,5 +1,6 @@
 import os
 import sys
+import json
 # from sys import executable
 from os import rename
 
@@ -39,3 +40,27 @@ for key in list(dict.keys()):
 
 for key, value in dict.items():
     print("User Name:%s Age:%s" % (key, value))
+
+
+print([key for key in dict.keys()])
+
+print([value for value in dict.values()])
+
+# print(tuple(dict.items()))
+
+# print(range(len(dict)))
+
+for e in range(0, 3):
+    print(e)
+
+
+#items = dict.items()
+# print(items)
+
+res_json = json.dumps(dict, sort_keys=tuple)
+
+print(res_json)
+
+for e in range(len(dict.keys())):
+    print(([key for key in dict.keys()][e], [
+          value for value in dict.values()][e]))
