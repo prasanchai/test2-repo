@@ -36,3 +36,6 @@ for key in list(dict.keys()):
         print('true')
     else:
         print('false')
+
+for key in list(dict.keys):
+    print(key)
